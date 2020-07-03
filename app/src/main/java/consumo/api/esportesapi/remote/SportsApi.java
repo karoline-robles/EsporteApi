@@ -7,4 +7,5 @@ import retrofit2.http.GET;
 public interface SportsApi {
     @GET("all_sports.php")
     Observable<SportsService> getCategoriaResponse();
+
 }

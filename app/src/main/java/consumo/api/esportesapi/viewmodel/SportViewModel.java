@@ -33,4 +33,9 @@ public class SportViewModel extends AndroidViewModel {
                                 throwable -> Log.i("LOG", "MESSAGE -> " + throwable.getMessage()))
         );
     }
+    @Override
+    protected void onCleared() {
+        super.onCleared();
+        disposable.clear();
+    }
 }
